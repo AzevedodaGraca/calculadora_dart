@@ -11,8 +11,6 @@ A command-line calculator application built with Dart, demonstrating basic arith
 │   └── categories.dart       # Product category validator
 ├── lib/
 │   └── calculator.dart       # Calculator library and utilities
-├── test/
-│   └── calculator_test.dart  # Unit tests
 ├── pubspec.yaml              # Project dependencies
 └── README.md                 # This file
 ```
@@ -53,18 +51,11 @@ dart run bin/calculator.dart
 dart run bin/categories.dart
 ```
 
-## Running Tests
-
-```bash
-dart test
-```
-
 ## Development
 
 The project includes:
 - `bin/`: Executable entry points
 - `lib/`: Reusable library code
-- `test/`: Unit tests for library functions
 
 ## License
 
