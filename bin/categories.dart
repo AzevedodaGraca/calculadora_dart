@@ -1,7 +1,7 @@
-import 'package:calculadora/calculadora.dart';
+import 'package:calculadora/calculator.dart';
 
 void main() {
-  final categorias = ['eletronicos', 'alimentos', 'vestuario', 'livros'];
-  final categoria = validaCategoriaInteractive(categorias);
-  print('Categoria válida: $categoria');
+  final categories = ['electronics', 'food', 'clothing', 'books'];
+  final category = validateCategoryInteractive(categories);
+  print('Valid category: $category');
 }

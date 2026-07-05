@@ -1,80 +1,80 @@
 import 'dart:io';
 
 void main() {
-  double numeroUm = 0;
-  double numeroDois = 0;
-  String operacao = "";
-  String? entrada = "";
-  List<String> operacoes = <String>["+", "-", "/", "*"];
+  double numberOne = 0;
+  double numberTwo = 0;
+  String operation = "";
+  String? input = "";
+  List<String> operations = <String>["+", "-", "/", "*"];
 
-  void soma() {
-    print(numeroUm + numeroDois);
+  void add() {
+    print(numberOne + numberTwo);
   }
 
-  void subtracao() {
-    print(numeroUm - numeroDois);
+  void subtract() {
+    print(numberOne - numberTwo);
   }
 
-  void divisao() {
-    print(numeroUm / numeroDois);
+  void divide() {
+    print(numberOne / numberTwo);
   }
 
-  void multiplicacao() {
-    print(numeroUm * numeroDois);
+  void multiply() {
+    print(numberOne * numberTwo);
   }
 
-  void calcular() {
-    switch (operacao) {
+  void calculate() {
+    switch (operation) {
       case "+":
-        soma();
+        add();
 
       case "-":
-        subtracao();
+        subtract();
 
       case "*":
-        multiplicacao();
+        multiply();
 
       case "/":
-        divisao();
+        divide();
         break;
     }
   }
 
-  void getOperacao() {
-    print("Digite uma operação ${operacoes.toString()}");
-    entrada = stdin.readLineSync();
-    if (entrada != null) {
-      if (operacoes.contains(entrada)) {
-        operacao = entrada!;
+  void getOperation() {
+    print("Enter an operation ${operations.toString()}");
+    input = stdin.readLineSync();
+    if (input != null) {
+      if (operations.contains(input)) {
+        operation = input!;
       } else {
-        print("Operação inválida");
-        getOperacao();
+        print("Invalid operation");
+        getOperation();
       }
     }
   }
 
-  print("Digite o primeiro valor");
+  print("Enter the first value");
 
-  entrada = stdin.readLineSync();
+  input = stdin.readLineSync();
 
-  if (entrada != null) {
-    if (entrada != "") {
-      numeroUm = double.parse(entrada!);
+  if (input != null) {
+    if (input != "") {
+      numberOne = double.parse(input!);
     }
   }
 
-  getOperacao();
+  getOperation();
 
-  print("Digite o segundo valor");
+  print("Enter the second value");
 
-  entrada = stdin.readLineSync();
-  if (entrada != null) {
-    if (entrada != "") {
-      numeroDois = double.parse(entrada!);
+  input = stdin.readLineSync();
+  if (input != null) {
+    if (input != "") {
+      numberTwo = double.parse(input!);
     }
   }
 
-  print("O resultado da operação é:");
+  print("The result of the operation is:");
 
-  calcular();
+  calculate();
 }
