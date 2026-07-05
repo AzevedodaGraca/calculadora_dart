@@ -6,11 +6,7 @@ A command-line calculator application built with Dart, demonstrating basic arith
 
 ```
 .
-├── bin/
-│   ├── calculator.dart       # Main calculator application
-│   └── categories.dart       # Product category validator
-├── lib/
-│   └── calculator.dart       # Calculator library and utilities
+├── calculadora.dart          # Calculator application
 ├── pubspec.yaml              # Project dependencies
 └── README.md                 # This file
 ```
@@ -18,7 +14,6 @@ A command-line calculator application built with Dart, demonstrating basic arith
 ## Features
 
 - **Calculator**: Performs basic arithmetic operations (addition, subtraction, multiplication, division)
-- **Category Validator**: Validates product categories interactively
 
 ## Getting Started
 
@@ -43,19 +38,8 @@ dart pub get
 
 ### Calculator
 ```bash
-dart run bin/calculator.dart
+dart run calculadora.dart
 ```
-
-### Category Validator
-```bash
-dart run bin/categories.dart
-```
-
-## Development
-
-The project includes:
-- `bin/`: Executable entry points
-- `lib/`: Reusable library code
 
 ## License
 
