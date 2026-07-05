@@ -6,7 +6,8 @@ A command-line calculator application built with Dart, demonstrating basic arith
 
 ```
 .
-├── calculator.dart           # Calculator application
+├── bin/
+│   └── calculator.dart       # Calculator application
 ├── pubspec.yaml              # Project dependencies
 └── README.md                 # This file
 ```
@@ -38,7 +39,7 @@ dart pub get
 
 ### Calculator
 ```bash
-dart run calculator.dart
+dart run bin/calculator.dart
 ```
 
 ## License
